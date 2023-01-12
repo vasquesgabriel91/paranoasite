@@ -1,0 +1,346 @@
+@media only screen and (max-width: 500px){
+    #menuHeader{
+        position: static;
+        height: 13vh;
+        background-color: #eceaea;
+        padding: 1em 0;
+    }
+    #menuHeader img{
+        display: flex;
+        padding: 1em;
+        width: 50%;
+    }
+    #menuBtn{
+        gap: 1.5em;
+        display: flex;
+        border: none;
+        background-color: transparent;
+
+    }
+    #menuToggle{
+        width: 9vw;
+        border-top: .2em solid;
+    }
+    #menuToggle::before , #menuToggle::after{
+        content: '';
+        display: block;
+        width: 9vw; 
+        height: .2em;   
+        background-color: currentColor;
+        margin-top: .65em;
+        transition: .4s;
+        position: relative;
+    }
+    #menuNav.active #menuToggle{
+        border-top-color:transparent ;
+        
+    }
+    #menuNav.active #menuToggle::before{
+        transform: rotate(45deg);
+    }
+    #menuNav.active #menuToggle::after{
+        transform: rotate(-45deg);
+        top: -.82em;
+    }
+    #menuLi{
+        position: absolute;
+        flex-direction: column;
+        background-color: #eceaea;
+        top: 13vh;
+        right: 0;
+        width: 100vw;
+        height: 0;
+        z-index: 1000;
+        display: none;
+        padding: 0;
+        transition:ease-in .7s;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+    #menuNav.active #menuLi{
+        height: 80vh;
+        visibility: visible;
+        overflow-y: auto;
+    }
+    #menuNav #menuLi li{
+        background-color: transparent;
+        margin: 0 auto;
+        width: 80vw;
+        border-bottom: 2px solid #58d8fc ;
+        padding-top: 1.5em;
+    }
+    #menuNav #menuLi li a {
+        color: #0f0f0f;
+        display: flex;
+        width: 100%;
+        font-size: 1rem;
+        text-shadow: none;
+
+   }
+   /************* CARROSEL PRINCIPAL MENU.HTML ************/
+   .carousel-control-prev-icon, .carousel-control-next-icon{
+    
+    width: 8vw;
+    height: 4vh;
+   }
+   
+/************* INFORMAÇÕES DEPOIS DO CARROSSEL PRICIPAL ************/
+.informacoes{
+    padding: 8em 1em 8em 1em;
+    line-height: 2em;
+    font-size: 0.8rem;
+}
+.informacoes h1{
+    padding-bottom: 0.4em;
+}
+/*SESSÃO FOTOS E TEXTOS COM EFEITO DE APARECER COM O ROLAR DO SCROLL (JAVASCRIPT)*/
+.conteudo{
+    height: auto;
+}
+.texto{
+    line-height: 1.5em;
+    height: auto;
+}
+.texto h1{
+    padding-top:0.3em ;
+    padding-bottom: 0.3em;
+}
+.texto p{
+    font-size: 0.8rem;
+}
+.industria{
+    width: 50vw;
+    height: 47vh;
+    background-position-x: -10vw;
+}
+.conteudo:hover{
+    box-shadow: -0.1em 0.1em 1em 0em #032027 inset;
+}
+.industriaDwParanoa{
+    background-position-x: -28vw;
+}
+.conteudoSombraInterna:hover{
+    box-shadow: 0em 0em 1em  0em #032027 inset;
+}
+.displayCliente{
+    background-image:  linear-gradient(22deg, #b6b6b6 0%, #ffffff 100%);
+    height: auto;
+    box-shadow: inset 0em 0em 1em 0em #424242;
+    padding-bottom: 1em;
+}
+.apresentacaoCliente{
+    height: 7vh;
+    padding-top: 1em;
+}
+.apresentacaoCliente h1{
+    font-size: 1.2rem;
+}
+.displayCliente-contente{
+    height: auto;
+    padding: 0.7em 0;
+    margin: 0;
+}
+
+/*----------------------- FORMULARIO DA PAGINA OUVIDORIA.HTML -----------------------*/
+.formulario {
+    padding: 4vh 0vw 10vw 0vw;
+}
+.formulario h1{
+    font-size:1.8rem ;
+}
+.formulario p{
+    font-size:1rem ;
+    line-height: 2em;
+    width: 75%;
+    padding:3vh 0vh 4vh 0vh;
+}
+.formu{
+    width: 83vw;   
+    height: 30vh;
+}
+textarea{
+    padding: 1.4em 0em 0em 1em;
+}
+/*----------------------- EMPRESA.HTML -----------------------*/
+
+.fabrica-Interna{
+    height: auto;
+    padding: 2em;
+    overflow: hidden;
+}
+.textoApresentacao{
+    height: auto;
+    padding: 0 .6em;
+}
+.textoApresentacao p{
+    font-size: 2rem;
+    height: auto;
+    width: auto;
+    margin: 0;
+}
+.politicaIntegrada{
+    flex-direction: column;
+    padding: 2em;
+}
+.textoPoliticaIntegrada{
+    text-align: center;
+    padding: 0;
+}
+.textoPoliticaIntegrada h1{
+    padding: 0em 0em 0.5em 0em;
+    text-align: center;
+}
+.textoPoliticaIntegrada p{
+    padding-bottom: 0.5em;
+    font-size: 1rem;
+}
+.textoPoliticaIntegrada ul {
+    padding: 0;
+}
+.textoPoliticaIntegrada ul li{
+    font-size: 0.85rem;
+    line-height: 2.3em;
+}
+.politicaInterna{
+    align-items: center;
+    margin-top: 2em;
+    width: auto;
+}
+.valores{
+    flex-direction: column;
+    padding: 0;
+    line-height: 5vh;
+    width: 85vw;
+    margin-left: 0;
+}
+.gifDisplayNone{
+    display:none ;
+}
+.gifs{
+    padding-bottom: 1.5em;
+    display: flex;
+    justify-content: center;
+}
+.gifs img{
+    width: 13.5vw;
+    height: 13.5vw;
+}
+.valores h2{
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+.valoresTextos p{
+    line-height: 2.3em;
+    font-size: 0.85rem;
+    text-align: center;
+}
+.valores ul li{
+    list-style-type: none;
+    text-align: center;
+    line-height: 2em;
+}
+.certificado{
+    padding: 5%;
+}
+.certificado .img1, .img2{
+    width: 40vw;
+}
+/*-----------------------Produtos-----------------------*/
+
+.produtos{
+    width: 100%;
+    height: 60vh;
+    background-position-x: -12em;
+    background-position-y: -.3em;
+    background-repeat: no-repeat;
+    color: white;
+    font-size: 3rem;
+}
+.informacoesDoProduto{
+    flex-direction: column;
+    justify-content: center;
+}
+.textoDeinformacaoDoProduto{
+    display: flex;
+    text-align: center;
+    width: 80vw;
+    padding: 0em 0.7em 1em 0em;
+}
+.tipoDeProduto{
+    justify-content: center;
+    width: 80vw;
+}
+
+.tipoDeProduto p{
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.animacaoTextoProduto{
+    width: 72vw;
+}
+
+.apresentacaoProdutos{
+       padding: 1em;
+}
+.fotosProdutos{
+    flex: 1 1 50%;
+    margin: 1em;
+    height: 34vh;
+    justify-content: center;
+}
+.seta{
+    justify-content: center;
+}
+.seta img{
+    width: 8vw;
+    height: 8vh;
+    padding-bottom: 1em;
+}
+
+.textoProdutos p{
+    color:white;
+    padding: 4em 1.5em 0em 1.5em;
+}
+
+.descricaoDoProduto p{
+    padding: 3em 1.5em 0em 1.5em;
+    height: 28vh;
+}
+[data-textoProdutos = bottom]{
+    transform: translate3d( 0em, 13.5em, 0em);
+}
+
+[data-textoProdutos  = bottom]:hover{
+    transform: translate3d( 0em, 0em, 0em);
+} 
+
+
+
+/*-----------------------RODAPÉ-----------------------*/
+footer{
+    padding: 2em 2em 0em 2em;                                                                                                                                                   
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.servicos{
+    flex-direction: column;
+    align-content: center;
+    height: auto;
+}
+.servicos ul {
+    padding: 0;
+    margin-top: 1em; 
+}
+.finep{
+    padding-left: 1em;
+    justify-content: center;
+    align-items: flex-end;
+}
+.finep img{
+    width: 40vw;
+}
+
+}
