@@ -86,20 +86,27 @@
    
 /************* INFORMAÇÕES DEPOIS DO CARROSSEL PRICIPAL ************/
 .informacoes{
-    padding: 8em 1em 8em 1em;
+    padding: 6em 1em 6em 1em;
     line-height: 2em;
     font-size: 0.8rem;
+    height: 15vh;
 }
 .informacoes h1{
-    padding-bottom: 0.4em;
+    padding-bottom: 0.2em;
 }
 /*SESSÃO FOTOS E TEXTOS COM EFEITO DE APARECER COM O ROLAR DO SCROLL (JAVASCRIPT)*/
+.conteudoPrincipal{
+    padding: 2em 0;
+
+}
 .conteudo{
     height: auto;
 }
 .texto{
+    height: auto; 
     line-height: 1.5em;
-    height: auto;
+    margin-left: 4.7%;
+    margin-right: 4.7%;
 }
 .texto h1{
     padding-top:0.3em ;
@@ -109,22 +116,18 @@
     font-size: 0.8rem;
 }
 .industria{
-    width: 50vw;
-    height: 47vh;
-    background-position-x: -10vw;
+    width: 45vw;
+    height: 70vh;
+    background-position-x: -20vw;
 }
-.conteudo:hover{
-    box-shadow: -0.1em 0.1em 1em 0em #032027 inset;
-}
+
 .industriaDwParanoa{
-    background-position-x: -28vw;
+    background-position-x: -85vw;
 }
-.conteudoSombraInterna:hover{
-    box-shadow: 0em 0em 1em  0em #032027 inset;
-}
+
 .displayCliente{
+    height: 20vh;
     background-image:  linear-gradient(22deg, #b6b6b6 0%, #ffffff 100%);
-    height: auto;
     box-shadow: inset 0em 0em 1em 0em #424242;
     padding-bottom: 1em;
 }
@@ -140,6 +143,9 @@
     padding: 0.7em 0;
     margin: 0;
 }
+.displayItem img {
+    width: 14vw;
+  }
 
 /*----------------------- FORMULARIO DA PAGINA OUVIDORIA.HTML -----------------------*/
 .formulario {
@@ -341,6 +347,9 @@ footer{
 }
 .finep img{
     width: 40vw;
+}
+.contatos{
+    margin-top: 10em;
 }
 
 }
