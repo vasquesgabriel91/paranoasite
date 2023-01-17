@@ -157,14 +157,17 @@
     flex-direction: column;
     width: 42%;
     height: 50vh;
-    color: #0e0d0d;
+    color: #252525;
     margin-left: 4%;
     margin-right: 4%;
 }
 .texto h1{
     padding-bottom: 2vh;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    text-transform: uppercase; 
+    font-weight: bold;
 }
+
 [data-animacao-menu]{
     opacity: 0;
     transition: 0.7s;
@@ -193,7 +196,7 @@
 .displayCliente{
     display: flex;
     background-image:  linear-gradient(22deg, #b6b6b6 0%, #ffffff 100%);
-    height: 35vh;
+    height: 37vh;
     box-shadow: inset 0em 0em 1em .1em #424242;
     overflow: hidden;
     flex-flow: wrap;
@@ -210,7 +213,7 @@
     padding-top: 2em;
 }
 .apresentacaoCliente h1{
-    padding-bottom: .7em;
+    padding-bottom: 1em;
     color: #1f1f1f;
     font-weight: 400;
 }
@@ -369,9 +372,11 @@ footer{
     color: #1d1d1d;
     font-size:0.9rem;
 }
-iframe{
+
+.local iframe{
     margin-top: 2em;
-    height: 20vh;
+    width: 100%;
+    padding-right: 1em;
 }
 span {
     padding-right: 0.5em;
